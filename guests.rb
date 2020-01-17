@@ -1,8 +1,8 @@
 class Guests
-  attr_accessor :room_name, :max_guests, :current_guests, :song_list
+  attr_accessor :guest_name, :fav_song
 
   def initialize(name,fav_song)
-    @name = name#
+    @guest_name = name#
     @song = fav_song
   end
 

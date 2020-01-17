@@ -17,6 +17,11 @@ class Room
     @current_guests << guest
   end
 
+  def check_room_capcity
+    @room.max_guests
+  end
+
+
   def check_out_guest(guest)
     @current_guests.delete(guest)
   end

@@ -11,7 +11,7 @@ require_relative("../songs.rb")
 class TestRoom < MiniTest::Test
   def setup()
     @song1 = Song.new("purple haze")
-    @guest = Guests.new("Joe", @song1)
+    @guest1 = Guests.new("Joe Bloggs", @song1)
     @room1 = Room.new("Lomond", 2, [@song1])
     # @room2 = Room.new("Lomond", 2, 0, ["song1", "Song 2"])
 
@@ -42,6 +42,7 @@ class TestRoom < MiniTest::Test
     assert_equal(1, @room1.get_current_guests_count)
   end
 
+  # test
 
 
 end
