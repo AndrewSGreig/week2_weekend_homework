@@ -1,8 +1,9 @@
 class Guests
-  attr_accessor :guest_name, :fav_song
+  attr_accessor :guest_name, :available_cash, :song
 
-  def initialize(name,fav_song)
-    @guest_name = name#
+  def initialize(name, cash, fav_song)
+    @guest_name = name
+    @available_cash = cash
     @song = fav_song
   end
 
